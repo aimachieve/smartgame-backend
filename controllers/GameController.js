@@ -9,6 +9,10 @@ const getTotal = ( data ) => {
   return total
 }
 
+exports.test = (req, res) => {
+  res.send("success")
+}
+
 exports.saveWinnerData = async (req, res) => {
   const { address } = req.body
 
